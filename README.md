@@ -279,7 +279,90 @@ A directed acyclic graph (`Figure 2.png`) was used to formalize the hypothesized
 
 ---
 
-## Research Impact
+## Figures
+
+<div align="center">
+
+**Figure 2. DAG (Directed Acyclic Graph) Framework**
+Hypothesized causal pathway between digital connectivity and mental health symptoms, used for minimal sufficient confounder selection.
+
+<img src="figures/Figure 2.png" alt="Figure 2 - DAG Framework" width="80%"/>
+
+---
+
+**Figure 3. Descriptive / Spatial Distribution**
+*(TIFF — high-resolution, publication-ready. GitHub does not render TIFF inline; open locally or via the link below.)*
+📄 [`figures/Figure 3.tiff`](figures/Figure%203.tiff)
+
+---
+
+**Figure 4. Descriptive / Spatial Distribution**
+*(TIFF — high-resolution, publication-ready.)*
+📄 [`figures/Figure 4.tiff`](figures/Figure%204.tiff)
+
+---
+
+**Figure 5. Descriptive / Spatial Distribution**
+*(TIFF — high-resolution, publication-ready.)*
+📄 [`figures/Figure 5.tiff`](figures/Figure%205.tiff)
+🔁 PDF version: [`figures/Figure 05.pdf`](figures/Figure%2005.pdf)
+
+---
+
+**Figure 6. Descriptive / Spatial Distribution**
+*(TIFF — high-resolution, publication-ready.)*
+📄 [`figures/Figure 6.tiff`](figures/Figure%206.tiff)
+🔁 PDF version: [`figures/Figure 06.pdf`](figures/Figure%2006.pdf)
+
+</div>
+
+> **Note:** GitHub's Markdown viewer renders `.png`/`.jpg`/`.gif`/`.svg` inline but **cannot preview `.tiff` or `.pdf`** files directly in the README. Figures 3–6 are linked so viewers can click through to download/open them (TIFF for print-quality journal submission, PDF for quick preview). If you'd like inline previews for these on GitHub as well, converting a low-res `.png` copy of each (e.g. `figures/Figure 3_preview.png`) alongside the original TIFF is the standard workaround — happy to generate those preview PNGs if you upload/share the TIFFs.
+
+---
+
+## Data & Code Archiving (Zenodo DOI)
+
+To ensure long-term reproducibility and citability, this repository is archived via **Zenodo**, which mints a permanent **Digital Object Identifier (DOI)** for each tagged release.
+
+```
+   GitHub Repository
+          │
+          ▼
+   Connect GitHub with Zenodo        (via Zenodo → GitHub integration, one-time setup)
+          │
+          ▼
+   Create GitHub Release (v1.0)       tag the repository at a stable analysis snapshot
+          │
+          ▼
+   Zenodo automatically archives it   Zenodo mirrors the release as a permanent snapshot
+          │
+          ▼
+   Zenodo gives a DOI                 e.g., 10.5281/zenodo.XXXXXXX
+          │
+          ▼
+   Use DOI in the manuscript          cite the exact code/data version used for publication
+```
+
+### How to Archive This Repository
+
+1. **Sign in to [Zenodo](https://zenodo.org)** using your GitHub account.
+2. Go to **Zenodo → GitHub** settings and toggle **ON** for `digital-connectivity-mental-health-bangladesh-women`.
+3. On GitHub, go to **Releases → Draft a new release**, tag it (e.g., `v1.0`), and publish.
+4. Zenodo automatically detects the new release and archives a permanent snapshot of the repository (code + data + figures as they existed at that release).
+5. Zenodo issues a **DOI** for the release — copy it from the Zenodo record page.
+6. Add the DOI badge to the top of this README (replace the placeholder below) and cite the DOI (not just the GitHub URL) in the manuscript's data/code availability statement.
+
+<div align="center">
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue?style=for-the-badge&labelColor=0d1117&logo=zenodo&logoColor=1682D4)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
+*Replace `10.5281/zenodo.XXXXXXX` with the actual DOI issued after your first tagged release.*
+
+</div>
+
+> **Why this matters:** Journals increasingly require a versioned, citable archive of code and data (not just a GitHub link, since repository content can change or be deleted). A Zenodo DOI guarantees the exact version of the analysis used in the published manuscript remains permanently retrievable.
+
+---
 
 | Domain | Contribution |
 |:-------|:-------------|
