@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NbJScQ8DOSpPDBSSM-B8">
+    <mxGraphModel dx="2059" dy="1322" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="irI79jimo41y6bKjKLOo-1" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;line-height: 115%;&quot;&gt;&lt;span lang=&quot;EN&quot; style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;In the first stage, a total of 674 enumeration&lt;br&gt;areas (EA) were selected using PPS&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;span lang=&quot;EN&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" x="310" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-2" parent="1" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;In the second stage, a total of 30,330 r&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;esidential households were selected, with 45 households chosen equally from&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;each of the EA&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="275" y="-290" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-3" parent="1" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;A total of 30,358 women were found eligible for the &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;interview in 30,018 households&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="240" x="310" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-4" parent="1" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;30,078 eligible women were interviewed with a&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;response rate of 99.1%&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="280" x="295" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-6" parent="1" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;line-height: 115%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Exposures: ICT Analysis&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="30" width="170" x="180" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-7" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Among them, data were collected from 28,537&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;women of reproductive age (15-49) years&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="250" x="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-12" parent="1" style="shape=delay;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Exposure : Internet Use&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="170" x="490" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-14" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="60" width="40" x="400" y="-350" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-15" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="50" width="40" x="400" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-16" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="50" width="40" x="400" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-17" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="60" width="40" x="400" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-18" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="50" width="40" x="400" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-22" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;div&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;312 households refused&amp;nbsp;&lt;/span&gt;&lt;span lang=&quot;EN&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;to&lt;/span&gt;&lt;span lang=&quot;EN&quot; style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;participate in the&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;interview or were out of reach.&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="670" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-23" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;line-height: 115%;&quot;&gt;&lt;span lang=&quot;EN&quot; style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;280 eligible women refused to participate in the&lt;br&gt;interview&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;span lang=&quot;EN&quot;&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="670" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-25" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;line-height: 115%;&quot;&gt;&lt;span lang=&quot;EN&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;, serif;&quot;&gt;&lt;b&gt;1,541 women were excluded due to insufficient data&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span lang=&quot;EN&quot;&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="670" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-26" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;margin-bottom: 0in; line-height: 115%;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;&lt;span lang=&quot;EN&quot; style=&quot;&quot;&gt;Data for 9950 women were&lt;/span&gt;&lt;span lang=&quot;EN&quot; style=&quot;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;excluded due to insufficient mental health data&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="-60" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-28" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.67;dx=20;notch=0;rotation=-180;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="40" width="237.45" x="426.8" y="-215" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-29" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.67;dx=20;notch=0;rotation=-180;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="40" width="240.85" x="429.15" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-30" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.67;dx=20;notch=0;rotation=-180;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="40" width="230.85" x="430.85" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-36" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="I&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;CT ownership and ICT Usages, complete cases analysis n=18,987&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="185" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-38" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;gradientColor=#ffd966;strokeColor=#d6b656;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;b&gt;Internet use&lt;/b&gt;&lt;/font&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;Times New Roman&quot;&gt;, &lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;complete cases analysis, n=5,486&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="530" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-42" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="310" width="50" x="395" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-46" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="50" width="40" x="235" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-47" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.67;dx=20;notch=0;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="30" width="110" x="140" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-48" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;" value="" vertex="1">
+          <mxGeometry height="45" width="40" x="560" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-49" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" value="&lt;p class=&quot;MsoNormal&quot; align=&quot;center&quot; style=&quot;line-height: 115%;&quot;&gt;&lt;span lang=&quot;EN&quot; style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;, serif;&quot;&gt;&lt;b&gt;&amp;nbsp;Excluded missing data of Internet use&lt;/b&gt;&lt;/span&gt;&lt;span lang=&quot;EN&quot;&gt;&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="673.75" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="irI79jimo41y6bKjKLOo-50" parent="1" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;gradientColor=#ea6b66;rotation=90;" value="" vertex="1">
+          <mxGeometry height="83.75" width="40" x="609.38" y="205.63" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
