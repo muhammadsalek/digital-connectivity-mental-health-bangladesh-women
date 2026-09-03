@@ -10,6 +10,25 @@
 
 <div align="center">
 
+<table>
+<tr>
+<td align="center">
+<img src="https://avatars.githubusercontent.com/u/180872571?v=4" width="100" height="100" style="border-radius:50%;" alt="Md Salek Miah"/><br/>
+<b>Md Salek Miah</b><br/>
+<sub>Department of Statistics, SUST</sub>
+</td>
+<td align="center">
+<img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=tMZWkOUAAAAJ&citpid=7" width="100" height="100" style="border-radius:50%;" alt="Md Jamal Uddin"/><br/>
+<b>Md Jamal Uddin, PhD</b><br/>
+<sub>Corresponding Author · SUST / DIU</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+<div align="center">
+
 [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge&labelColor=0d1117&logo=opensourceinitiative&logoColor=10b981)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20Research-7c3aed?style=for-the-badge&labelColor=0d1117)](https://github.com)
 [![Journal](https://img.shields.io/badge/Output-Q1%20Journal%20Ready-00d4ff?style=for-the-badge&labelColor=0d1117)](https://github.com)
