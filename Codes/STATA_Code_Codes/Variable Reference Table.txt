@@ -1,0 +1,43 @@
+Variable Reference Table
+Variable Name	Description	Type	Categories / Coding / Labels
+Outcome Variables			
+depression	Depression status (PHQ-9 score ≥10)	Binary (0/1)	0 = No depression
+1 = Depression
+anxiety	Anxiety status (GAD-7 score ≥10)	Binary (0/1)	0 = No anxiety
+1 = Anxiety
+phq9_score	PHQ-9 total score (sum of 9 depression items)	Continuous	Range: 0 to 27
+gad7_score	GAD-7 total score (sum of 7 anxiety items)	Continuous	Range: 0 to 21
+
+| Exposure Variable | | | |
+| media_exposure | Composite media exposure level | Categorical | 0 = No exposure<br>1 = Low exposure<br>2 = Moderate exposure<br>3 = High exposure |
+| tv_exp | TV exposure | Binary (0/1) | 1 = Exposed (frequency: almost every day/weekly/less than weekly)<br>0 = Not exposed (never) |
+| radio_exp | Radio exposure | Binary (0/1) | Same as TV exposure coding |
+| newspaper_exp | Newspaper exposure | Binary (0/1) | Same as TV exposure coding |
+| mobile_exp | Mobile phone ownership | Binary (0/1) | 1 = Owns mobile phone<br>0 = Does not own |
+| media_score | Sum of four media exposures (TV, radio, newspaper, mobile) | Integer (0–4) | Count of media exposure sources |
+
+| Sociodemographic Variables | | | |
+| mother_age | Age of mother (in years) | Continuous or categorical | Numeric, from variable v013 (usually 15–49)|
+| mother_edu | Mother's education level | Categorical | Usually coded as:<br>0 = No education<br>1 = Primary<br>2 = Secondary<br>3 = Higher (confirm with BDHS codebook)|
+| mother_marital_status| Mother's marital status | Categorical | Usually coded as:<br>1 = Never married<br>2 = Married<br>3 = Widowed/Divorced (confirm BDHS codebook)|
+| area | Place of residence | Binary (1/2) | 1 = Urban<br>2 = Rural |
+| hh_division | Administrative division (region) | Categorical | 1 = Barisal<br>2 = Chittagong<br>... (BDHS regional codes)|
+| religion | Religion | Categorical | 1 = Islam<br>2 = Hindu<br>3 = Others (BDHS codes)|
+| hh_wealth | Household wealth quintile | Categorical | 1 = Poorest<br>2 = Poorer<br>3 = Middle<br>4 = Richer<br>5 = Richest |
+| hh_size_cat | Household size category | Binary (0/1) | 0 = >5 members<br>1 = ≤5 members |
+| hh_head_sex | Sex of household head | Binary (0/1) | 1 = Male<br>2 = Female (check BDHS, may need recoding) |
+| currently_working | Employment status of respondent | Binary (0/1) | 1 = Currently working<br>0 = Not working |
+| father_edu | Father's education level | Categorical | Similar coding as mother's education |
+
+| Health & Psychosocial Variables | | | |
+| trouble_sleep | Trouble sleeping indicator | Binary (0/1) | 0 = Never trouble<br>1 = Sometimes/Often/Always trouble |
+| bp_test_selected | Blood pressure test selected | Binary | 1 = Yes<br>0 = No (confirm variable details) |
+| pressure_to_pregnant | Pressure to become pregnant | Binary | 1 = Yes<br>0 = No |
+| decision_visits_family| Decision-making on visits to family | Binary | 1 = Yes<br>0 = No |
+| family_status | Family decision status | Binary | 1 = Yes<br>0 = No |
+| social_service_help | Received social service help | Binary | 1 = Yes<br>0 = No |
+| social_worker_help | Received help from social worker | Binary | 1 = Yes<br>0 = No |
+| health_care_decision | Health care decision making | Binary | 1 = Yes<br>0 = No |
+| large_purchase_decision| Decision on large purchases | Binary | 1 = Yes<br>0 = No |
+| money_decision | Decision on money matters | Binary | 1 = Yes<br>0 = No |
+
