@@ -29,7 +29,8 @@
 
 <div align="center">
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23469923-1682D4?style=for-the-badge&labelColor=0d1117&logo=zenodo&logoColor=1682D4)](https://zenodo.org/records/23469923)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23469923.svg)](https://doi.org/10.5281/zenodo.23469923)
+[![Zenodo](https://img.shields.io/badge/Archive-Zenodo-1682D4?style=for-the-badge&labelColor=0d1117&logo=zenodo&logoColor=1682D4)](https://zenodo.org/records/23469923)
 [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge&labelColor=0d1117&logo=opensourceinitiative&logoColor=10b981)](LICENSE)
 [![Release](https://img.shields.io/badge/Release-v1.0.0-7c3aed?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women/releases/tag/v1.0.0)
 [![Design](https://img.shields.io/badge/Design-Cross--Sectional-ff6b6b?style=for-the-badge&labelColor=0d1117)](#study-design-and-data-source)
@@ -70,9 +71,10 @@
 12. [Policy and Public Health Implications](#policy-and-public-health-implications)
 13. [Data Availability and Ethics](#data-availability-and-ethics)
 14. [Open Science and Archiving](#open-science-and-archiving)
-15. [How to Cite](#how-to-cite)
-16. [License](#license)
-17. [Contact](#contact)
+15. [Version History](#version-history)
+16. [How to Cite](#how-to-cite)
+17. [License](#license)
+18. [Contact](#contact)
 
 ---
 
@@ -331,13 +333,25 @@ Then run the spatial mapping and descriptive R script(s) in `Codes/`.
 
 ## Open Science and Archiving
 
-This repository is permanently archived on Zenodo to guarantee long-term access and a citable, versioned snapshot of the analysis.
+This repository follows FAIR principles (Findable, Accessible, Interoperable, Reusable). Each tagged release is permanently archived on Zenodo, which provides a persistent DOI and an immutable, citable snapshot of the code, figures, tables, and documents.
 
 | Resource | Link |
 |:---------|:-----|
-| Zenodo record (v1.0.0) | [10.5281/zenodo.23469923](https://zenodo.org/records/23469923) |
+| Zenodo record (v1.0.0) | [zenodo.org/records/23469923](https://zenodo.org/records/23469923) |
+| DOI | [10.5281/zenodo.23469923](https://doi.org/10.5281/zenodo.23469923) |
 | GitHub release | [v1.0.0](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women/releases/tag/v1.0.0) |
 | Repository | [muhammadsalek/digital-connectivity-mental-health-bangladesh-women](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women) |
+| Machine-readable citation | [`CITATION.cff`](CITATION.cff) (use "Cite this repository" in the GitHub sidebar) |
+
+---
+
+## Version History
+
+| Version | Description | Archive |
+|:--------|:------------|:--------|
+| **v1.0.0** | Initial archived release: analysis code, figures, tables, submitted, revised and published manuscript versions, reference papers, AI/similarity reports, and waiver letter | [Zenodo](https://zenodo.org/records/23469923) |
+
+Future releases (for example `v1.0.1`) will be listed here with their own Zenodo records. Each release receives its own version DOI, while the Zenodo concept DOI always resolves to the latest version.
 
 ---
 
