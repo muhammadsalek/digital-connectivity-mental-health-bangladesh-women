@@ -29,11 +29,11 @@
 
 <div align="center">
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23469923-1682D4?style=for-the-badge&labelColor=0d1117&logo=zenodo&logoColor=1682D4)](https://zenodo.org/records/23469923)
 [![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge&labelColor=0d1117&logo=opensourceinitiative&logoColor=10b981)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active%20Research-7c3aed?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women)
-[![Journal](https://img.shields.io/badge/Output-Q1%20Journal%20Submission-00d4ff?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women)
-[![Design](https://img.shields.io/badge/Design-Cross--Sectional-ff6b6b?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women)
-[![Sample](https://img.shields.io/badge/Sample-18%2C987%20Women-f59e0b?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women)
+[![Release](https://img.shields.io/badge/Release-v1.0.0-7c3aed?style=for-the-badge&labelColor=0d1117)](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women/releases/tag/v1.0.0)
+[![Design](https://img.shields.io/badge/Design-Cross--Sectional-ff6b6b?style=for-the-badge&labelColor=0d1117)](#study-design-and-data-source)
+[![Sample](https://img.shields.io/badge/Sample-18%2C987%20Women-f59e0b?style=for-the-badge&labelColor=0d1117)](#study-design-and-data-source)
 
 </div>
 
@@ -54,76 +54,59 @@
 
 ---
 
-<div align="center">
-
-```
-+------------------------------------------------------------------------+
-|  Digital Connectivity  |  Depression (PHQ-9) and Anxiety (GAD-7)       |
-|  18,987 Ever-Married Women  |  BDHS 2022  |  8 Divisions               |
-|  Rural-Urban Disparities  |  Spatial Inequity  |  SDG 3                |
-+------------------------------------------------------------------------+
-```
-
-</div>
-
----
-
 ## Table of Contents
 
-- [Overview](#overview)
-- [Abstract](#abstract)
-- [Highlights](#highlights)
-- [Authors](#authors)
-- [Study Design and Data Source](#study-design-and-data-source)
-- [Repository Structure](#repository-structure)
-- [Quick Start](#quick-start)
-- [Key Results](#key-results)
-- [Analytic Framework (DAG)](#analytic-framework-dag)
-- [Figures and Tables](#figures-and-tables)
-- [Manuscript Versions and Supporting Documents](#manuscript-versions-and-supporting-documents)
-- [Data and Code Archiving (Zenodo DOI)](#data-and-code-archiving-zenodo-doi)
-- [Contributions](#contributions)
-- [Citation](#citation)
-- [License](#license)
+1. [At a Glance](#at-a-glance)
+2. [Research Question and Rationale](#research-question-and-rationale)
+3. [Abstract](#abstract)
+4. [Key Findings](#key-findings)
+5. [Authors and Affiliations](#authors-and-affiliations)
+6. [Study Design and Data Source](#study-design-and-data-source)
+7. [Statistical Methods](#statistical-methods)
+8. [Analytic Framework (DAG)](#analytic-framework-dag)
+9. [Repository Structure](#repository-structure)
+10. [Reproducibility Guide](#reproducibility-guide)
+11. [Limitations](#limitations)
+12. [Policy and Public Health Implications](#policy-and-public-health-implications)
+13. [Data Availability and Ethics](#data-availability-and-ethics)
+14. [Open Science and Archiving](#open-science-and-archiving)
+15. [How to Cite](#how-to-cite)
+16. [License](#license)
+17. [Contact](#contact)
 
 ---
 
-## Overview
+## At a Glance
 
-This study examines the associations between **internet use, ICT usage, and ICT ownership** with **symptoms of depression and anxiety** among ever-married women in Bangladesh, with particular attention to **rural-urban disparities** and **spatial inequities** across the country's eight administrative divisions. The analysis combines **DAG-informed confounder selection**, **bivariate association testing**, **survey-weighted multivariable logistic regression**, and **spatial mapping** to generate policy-relevant evidence for gender-sensitive, geographically targeted digital mental health strategies.
+| Item | Details |
+|:-----|:--------|
+| **Title** | Digital Connectivity and Mental Health Symptoms Among Women in Bangladesh: A Rural-Urban Perspective |
+| **Design** | Cross-sectional, nationally representative, rural-urban stratified |
+| **Data source** | Bangladesh Demographic and Health Survey (BDHS) 2022 |
+| **Population** | Ever-married women aged 15-49 years (n = 18,987) |
+| **Exposures** | Internet use, ICT usage, ICT ownership |
+| **Outcomes** | Depression symptoms (PHQ-9), anxiety symptoms (GAD-7) |
+| **Primary method** | Survey-weighted multivariable logistic regression, DAG-informed adjustment |
+| **Spatial component** | Divisional choropleth mapping across 8 administrative divisions |
+| **Reporting standard** | STROBE (cross-sectional) |
+| **Software** | Stata (data management and modeling), R (spatial mapping and graphics) |
+| **Archive** | Zenodo, DOI [10.5281/zenodo.23469923](https://zenodo.org/records/23469923) |
+| **Global health goal** | Sustainable Development Goal 3: Good Health and Well-being |
 
-This repository contains the full research workflow: analysis code, figures, tables, manuscript versions (submitted, revision, and published), citation material, and supporting documents such as the AI/plagiarism reports and the waiver letter.
+---
 
-**Analysis Pipeline:**
+## Research Question and Rationale
 
-```
-BDHS 2022 Data  (Bangladesh, Ever-Married Women 15-49 yrs, Cross-Sectional)
-          |
-          |  Internet use, ICT usage, ICT ownership
-          |  PHQ-9 (depression), GAD-7 (anxiety), n = 18,987
-          v
-   Data Management        cleaning, recoding, variable construction
-   (Stata .do file)
-          |
-          v
-   DAG Framework          confounder identification, minimal adjustment set
-                          theory-driven causal pathway (connectivity -> mental health)
-          |
-          v
-   Bivariate Analysis     chi-square / t-test associations by exposure and outcome
-   (Stata .do file)       digital connectivity x PHQ-9/GAD-7, by residence and division
-          |
-          v
-   Regression Modeling    survey-weighted multivariable logistic regression
-   (Stata .do file)       stratified by rural/urban residence
-          |
-          v
-   Spatial Mapping        divisional choropleth maps (sf/ggplot2 in R)
-   (R script)             internet access, ICT index, mental health burden
-          |
-          v
-   Outputs                descriptive and spatial figures, tables, STROBE checklist
-```
+Mobile phones and the internet are expanding rapidly across Bangladesh, yet access is unevenly distributed by gender, residence, and region. Whether this expansion supports or strains women's mental health remains poorly understood in low- and middle-income settings, and national-level evidence disaggregated by rural-urban residence and geography is scarce.
+
+**Primary research question:** Are internet use, ICT usage, and ICT ownership associated with symptoms of depression and anxiety among ever-married women in Bangladesh, and do these associations differ between rural and urban settings and across divisions?
+
+**Specific objectives**
+
+1. Estimate the national prevalence of depression (PHQ-9) and anxiety (GAD-7) symptoms among ever-married women.
+2. Quantify associations between three dimensions of digital connectivity and each mental health outcome using survey-weighted adjusted models.
+3. Assess effect heterogeneity by place of residence (rural versus urban).
+4. Map divisional patterns of digital access and mental health burden to identify geographic inequities.
 
 ---
 
@@ -141,15 +124,41 @@ BDHS 2022 Data  (Bangladesh, Ever-Married Women 15-49 yrs, Cross-Sectional)
 
 ---
 
-## Highlights
+## Key Findings
 
-- High mental health burden was highlighted in digitally connected divisions: **Dhaka, Chattogram, Sylhet, and Barishal**.
-- Low digital access and lower mental health burden were concentrated in **Rangpur**.
-- These findings reveal significant rural-urban and geographic inequities, emphasizing the need for **region-specific, equity-oriented digital mental health interventions** in Bangladesh.
+### Overall Prevalence
+
+| Outcome | Prevalence |
+|:--------|:----------:|
+| Depression symptoms (PHQ-9 positive) | **4.8%** |
+| Anxiety symptoms (GAD-7 positive) | **4.1%** |
+
+### Adjusted Associations (Survey-Weighted Logistic Regression)
+
+| Residence | Exposure | Outcome | aOR | 95% CI |
+|:----------|:---------|:--------|:---:|:------:|
+| Rural | ICT use | Depression symptoms | **1.38** | 1.12-1.69 |
+| Urban | ICT ownership | Depression symptoms | **1.81** | 1.01-3.25 |
+| Urban | ICT ownership | Anxiety symptoms | **2.11** | 1.14-3.92 |
+
+aOR = adjusted odds ratio; CI = confidence interval.
+
+### Spatial Patterns
+
+| Pattern | Divisions |
+|:--------|:----------|
+| High digital connectivity and high mental health burden | Dhaka, Chattogram, Sylhet, Barishal |
+| Low digital access and distinct mental health pattern | Rangpur, Rajshahi |
+
+### Highlights
+
+- Mental health burden was concentrated in digitally connected divisions: Dhaka, Chattogram, Sylhet, and Barishal.
+- Low digital access with lower mental health burden was concentrated in Rangpur.
+- Associations differed by residence, supporting region-specific and equity-oriented digital mental health strategies rather than a single national approach.
 
 ---
 
-## Authors
+## Authors and Affiliations
 
 **Md Salek Miah**¹
 Biostatistics, Epidemiology, and Public Health Research Team, Department of Statistics
@@ -172,31 +181,61 @@ Email: [jamal-sta@sust.edu](mailto:jamal-sta@sust.edu)
 
 ### Design Overview
 
-This is a **cross-sectional analytical study** using the **Bangladesh Demographic and Health Survey (BDHS) 2022**, examining digital connectivity and mental health symptoms among ever-married women, disaggregated by **rural/urban residence** and **divisional (administrative) geography**. The study follows the **STROBE reporting guidelines for cross-sectional studies** and uses a **DAG-informed analytic strategy** to minimize confounding bias in estimating the connectivity-mental health relationship.
+This is a cross-sectional analytical study using the **Bangladesh Demographic and Health Survey (BDHS) 2022**, a nationally representative household survey. Digital connectivity and mental health symptoms among ever-married women are analyzed overall and disaggregated by **rural/urban residence** and **division**. The study follows the **STROBE reporting guidelines for cross-sectional studies** and uses a **DAG-informed analytic strategy** to limit confounding bias.
 
 ### Study Population and Eligibility
 
 ```
-Target Population
+Target population
       |
       |- Ever-married women aged 15-49 years
       |- Residing in one of Bangladesh's 8 administrative divisions
-      '- Inclusion criterion: complete data on internet use / ICT use / ICT ownership
+      '- Complete data on internet use / ICT use / ICT ownership
            and PHQ-9 / GAD-7 screening items
 
-                         After data cleaning and reconciliation
+                   After data cleaning and reconciliation
 
-              +---------------------------------------------+
-              |   Final Analytic Sample: n = 18,987         |
-              +----------------------------------+----------+
-              |  Depression (PHQ-9 positive)     |   4.8%   |
-              |  Anxiety (GAD-7 positive)        |   4.1%   |
-              +----------------------------------+----------+
+        +---------------------------------------------+
+        |   Final analytic sample: n = 18,987         |
+        +----------------------------------+----------+
+        |  Depression (PHQ-9 positive)     |   4.8%   |
+        |  Anxiety (GAD-7 positive)        |   4.1%   |
+        +----------------------------------+----------+
 ```
+
+### Measures
+
+| Domain | Measure |
+|:-------|:--------|
+| Exposure | Internet use, ICT usage, ICT ownership |
+| Outcome (depression) | PHQ-9 screening, dichotomized at the standard symptom threshold |
+| Outcome (anxiety) | GAD-7 screening, dichotomized at the standard symptom threshold |
+| Stratifier | Place of residence (rural/urban) |
+| Geography | Eight administrative divisions |
+| Covariates | Selected through the DAG-based minimal sufficient adjustment set |
+
+PHQ-9 and GAD-7 are screening instruments. Positive scores indicate probable symptoms and are not clinical diagnoses.
 
 ### Geographic Scope
 
-Spatial analyses use official **Bangladesh administrative boundary shapefiles** to map division-level indicators of internet access, combined ICT status, and mental health burden. High digital connectivity and mental health burden clustered in **Dhaka, Chattogram, Sylhet, and Barishal**, while **Rangpur** showed the lowest digital access alongside a distinct mental health pattern.
+Spatial analyses use official Bangladesh administrative boundary shapefiles to map division-level indicators of internet access, combined ICT status, and mental health burden.
+
+---
+
+## Statistical Methods
+
+1. **Data management:** cleaning, recoding, and construction of exposure, outcome, and covariate variables in Stata.
+2. **Confounder selection:** a directed acyclic graph (DAG) identified the minimal sufficient adjustment set, reducing the risk of over-adjustment and collider bias.
+3. **Bivariate analysis:** chi-square and t-test comparisons of digital connectivity indicators with PHQ-9 and GAD-7 outcomes, by residence and division.
+4. **Multivariable modeling:** survey-weighted logistic regression accounting for the complex BDHS sampling design (clustering, stratification, and sampling weights), reported as adjusted odds ratios with 95% confidence intervals.
+5. **Stratified analysis:** models fitted separately for rural and urban women to examine effect heterogeneity.
+6. **Spatial mapping:** divisional choropleth maps built with `sf` and `ggplot2` in R.
+
+---
+
+## Analytic Framework (DAG)
+
+A directed acyclic graph was used to formalize the hypothesized causal pathway between digital connectivity and mental health outcomes. It guided the selection of covariates before modeling, so adjustment was theory-driven rather than data-driven. The DAG figure is provided in the `Figures/` folder.
 
 ---
 
@@ -208,208 +247,118 @@ digital-connectivity-mental-health-bangladesh-women/
 |-- README.md
 |-- LICENSE
 |
-|-- Codes/                  Stata .do files and R scripts (data management,
-|                           bivariate analysis, modeling, spatial mapping,
-|                           and all RStudio figure syntaxes)
-|
-|-- Figures/                Manuscript figures (DAG, descriptive and spatial maps)
+|-- Codes/                  Stata .do files and R scripts
+|-- Figures/                Manuscript figures (DAG, descriptive, spatial)
 |-- Tables/                 Manuscript tables
 |
-|-- Submitted_Versions/     Manuscript version(s) as submitted to the journal
-|-- Revision_Paper/         Latest revised manuscript version(s)
-|-- Published_Versions/     Published version(s) of the paper
+|-- Submitted_Versions/     Manuscript as submitted
+|-- Revision_Paper/         Revised manuscript versions
+|-- Published_Versions/     Published version(s)
 |
-|-- Citations_Papers/       Cited and reference papers supporting the study
-|-- Mothers_Papers/         Related and parent papers from the same project
+|-- Citations_Papers/       Cited reference papers
+|-- Mothers_Papers/         Related parent papers from the same project
 |
-|-- Ai_Plagrarism_Reports/  AI-content and plagiarism check reports
+|-- Ai_Plagrarism_Reports/  AI-content and similarity check reports
 `-- Waiver_Letter/          Waiver letter documentation
 ```
 
 | Folder | Purpose |
 |:-------|:--------|
-| `Codes/` | Complete analysis code: Stata data management and modeling, bivariate analysis, and R scripts for spatial mapping and descriptive graphics |
-| `Figures/` | Final figures used in the manuscript |
-| `Tables/` | Final tables used in the manuscript |
+| `Codes/` | Complete analysis code: data management, bivariate analysis, regression modeling, spatial mapping, and figure syntaxes |
+| `Figures/` | Final manuscript figures |
+| `Tables/` | Final manuscript tables |
 | `Submitted_Versions/` | Manuscript as originally submitted |
-| `Revision_Paper/` | Most recent revised manuscript versions |
+| `Revision_Paper/` | Revised manuscript versions |
 | `Published_Versions/` | Published article version(s) |
-| `Citations_Papers/` | Reference and citation papers |
+| `Citations_Papers/` | Reference papers supporting the study |
 | `Mothers_Papers/` | Related parent papers |
 | `Ai_Plagrarism_Reports/` | AI-detection and plagiarism similarity reports |
 | `Waiver_Letter/` | Waiver letter for the submission |
 
 ---
 
-## Quick Start
+## Reproducibility Guide
 
-**Requirements:** Stata `>= 15` and R `>= 4.0`
+**Requirements:** Stata 15 or later; R 4.0 or later.
 
-All analysis scripts are in the `Codes/` folder. Run them in the following order.
+**Step 1. Obtain the data.** Register with the [DHS Program](https://dhsprogram.com) and request the BDHS 2022 datasets. Raw microdata are not redistributed in this repository, in line with the DHS data use agreement.
 
-**Step 1: Data Management and Modeling (Stata)**
+**Step 2. Data management and modeling (Stata).** Run the data management and modeling `.do` file in `Codes/`.
 
-Run the data management and modeling `.do` file from `Codes/`.
+**Step 3. Bivariate analysis (Stata).** Run the bivariate `.do` file in `Codes/`.
 
-```stata
-cd "path/to/digital-connectivity-mental-health-bangladesh-women"
-do "Codes/<data-management-and-modeling>.do"
-```
-
-**Step 2: Bivariate Analysis (Stata)**
-
-```stata
-do "Codes/<bivariate>.do"
-```
-
-**Step 3: Spatial Mapping and Descriptive Graphics (R)**
+**Step 4. Spatial mapping and descriptive graphics (R).**
 
 ```r
-# Install dependencies
 install.packages(c("sf", "ggplot2", "readxl", "dplyr", "tidyr", "viridis"))
-
-# Run the spatial mapping and descriptive script(s) in Codes/
-source("Codes/<spatial-mapping-and-descriptives>.R")
 ```
 
-**Step 4: Review Outputs**
+Then run the spatial mapping and descriptive R script(s) in `Codes/`.
 
-- Final figures are in `Figures/` and final tables are in `Tables/`.
-- Manuscript versions are in `Submitted_Versions/`, `Revision_Paper/`, and `Published_Versions/`.
+**Step 5. Review outputs.** Final figures are in `Figures/` and final tables are in `Tables/`.
 
-> Replace the `<...>` placeholders above with the exact file names inside `Codes/`.
-
----
-
-## Key Results
-
-### Overall Prevalence
-
-| Outcome | Prevalence |
-|:--------|:----------:|
-| Depression symptoms (PHQ-9 positive) | **4.8%** |
-| Anxiety symptoms (GAD-7 positive) | **4.1%** |
-
-### Adjusted Associations (Survey-Weighted Logistic Regression)
-
-| Residence | Exposure | Outcome | aOR | 95% CI |
-|:----------|:---------|:--------|:---:|:------:|
-| Rural | ICT use | Depression symptoms | **1.38** | 1.12-1.69 |
-| Urban | ICT ownership | Depression symptoms | **1.81** | 1.01-3.25 |
-| Urban | ICT ownership | Anxiety symptoms | **2.11** | 1.14-3.92 |
-
-### Spatial Patterns
-
-| Pattern | Divisions |
-|:--------|:----------|
-| High digital connectivity and high mental health burden | Dhaka, Chattogram, Sylhet, Barishal |
-| Low digital access and distinct mental health pattern | Rangpur, Rajshahi |
+> GitHub previews `.png`, `.jpg`, `.gif`, and `.svg` inline but not `.tiff` or `.pdf`. High-resolution TIFF figures are intended for journal submission; download them to view locally.
 
 ---
 
-## Analytic Framework (DAG)
+## Limitations
 
-A directed acyclic graph was used to formalize the hypothesized causal pathway between digital connectivity and mental health outcomes. It guided the selection of a minimal sufficient adjustment set prior to survey-weighted regression modeling, reducing the risk of over-adjustment and collider bias. The DAG figure is available in the `Figures/` folder.
-
----
-
-## Figures and Tables
-
-All figures and tables used in the manuscript are provided in the `Figures/` and `Tables/` folders.
-
-| Item | Description |
-|:-----|:------------|
-| DAG framework | Hypothesized causal pathway between digital connectivity and mental health symptoms, used for minimal sufficient confounder selection |
-| Descriptive figures | Distribution of internet use, ICT usage, and ICT ownership by residence and division |
-| Spatial figures | Divisional choropleth maps of internet access, ICT status, and mental health burden |
-| Tables | Descriptive statistics, bivariate associations, and survey-weighted adjusted regression results |
-
-> **Note:** GitHub's Markdown viewer renders `.png`, `.jpg`, `.gif`, and `.svg` inline but cannot preview `.tiff` or `.pdf` files directly. High-resolution TIFF files are intended for print-quality journal submission; open them locally or download them from the folder.
+- **Cross-sectional design:** temporal ordering between digital connectivity and mental health symptoms cannot be established, and reverse causation is possible (for example, symptomatic women may change their ICT use).
+- **Screening instruments:** PHQ-9 and GAD-7 identify probable symptoms, not clinical disorders, and rely on self-report.
+- **Residual confounding:** although covariates were chosen using a DAG, unmeasured factors such as social support, online content type, and screen time may remain.
+- **Estimate precision:** some urban estimates have wide confidence intervals with lower bounds close to 1.0, so they should be interpreted cautiously.
+- **Exposure measurement:** BDHS captures access and ownership but not the intensity, purpose, or quality of digital engagement.
+- **Population scope:** findings apply to ever-married women aged 15-49 years and may not generalize to unmarried women, men, or other age groups.
 
 ---
 
-## Manuscript Versions and Supporting Documents
+## Policy and Public Health Implications
 
-| Folder | Contents |
-|:-------|:---------|
-| `Submitted_Versions/` | The manuscript as submitted to the journal |
-| `Revision_Paper/` | Latest revision versions prepared in response to reviewer and editor comments |
-| `Published_Versions/` | The published version(s) of the article |
-| `Citations_Papers/` | Papers cited in the manuscript |
-| `Mothers_Papers/` | Related parent papers from the same research project |
-| `Ai_Plagrarism_Reports/` | AI-content detection and plagiarism similarity reports |
-| `Waiver_Letter/` | Waiver letter documentation related to the submission |
+- Digital access should be considered within broader discussions of women's mental health rather than treated as uniformly beneficial or harmful.
+- Differences between rural and urban associations support context-specific, gender-sensitive digital mental health strategies.
+- Divisional patterns, notably in Rangpur and Rajshahi, point to areas where low digital access and distinct mental health needs coincide, which may help target resources.
+- Findings contribute evidence toward SDG 3 (Good Health and Well-being).
 
 ---
 
-## Data and Code Archiving (Zenodo DOI)
+## Data Availability and Ethics
 
-To ensure long-term reproducibility and citability, this repository can be archived via **Zenodo**, which mints a permanent **Digital Object Identifier (DOI)** for each tagged release.
-
-```
-   GitHub Repository
-          |
-          v
-   Connect GitHub with Zenodo        (Zenodo GitHub integration, one-time setup)
-          |
-          v
-   Create GitHub Release (v1.0)      tag the repository at a stable analysis snapshot
-          |
-          v
-   Zenodo automatically archives it  mirrors the release as a permanent snapshot
-          |
-          v
-   Zenodo gives a DOI                e.g., 10.5281/zenodo.XXXXXXX
-          |
-          v
-   Use DOI in the manuscript         cite the exact code/data version used for publication
-```
-
-### How to Archive This Repository
-
-1. Sign in to [Zenodo](https://zenodo.org) using your GitHub account.
-2. Go to **Zenodo > GitHub** settings and toggle **ON** for `digital-connectivity-mental-health-bangladesh-women`.
-3. On GitHub, go to **Releases > Draft a new release**, tag it (e.g., `v1.0`), and publish.
-4. Zenodo automatically detects the new release and archives a permanent snapshot of the repository.
-5. Zenodo issues a **DOI** for the release. Copy it from the Zenodo record page.
-6. Add the DOI badge below and cite the DOI (not only the GitHub URL) in the manuscript's data and code availability statement.
-
-<div align="center">
-
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue?style=for-the-badge&labelColor=0d1117&logo=zenodo&logoColor=1682D4)](https://doi.org/10.5281/zenodo.XXXXXXX)
-
-*Replace `10.5281/zenodo.XXXXXXX` with the actual DOI issued after the first tagged release.*
-
-</div>
-
-> **Why this matters:** Journals increasingly require a versioned, citable archive of code and data, not just a GitHub link, since repository content can change or be deleted. A Zenodo DOI keeps the exact version of the analysis used in the manuscript permanently retrievable.
+- **Data:** BDHS 2022 data are publicly available from the DHS Program (https://dhsprogram.com) upon registration and approval.
+- **Ethics:** this is a secondary analysis of de-identified, publicly available survey data. The original BDHS received ethical approval and informed consent from participants during data collection.
+- **Code:** all analysis code is openly available in this repository and in the Zenodo archive.
 
 ---
 
-## Contributions
+## Open Science and Archiving
 
-| Domain | Contribution |
-|:-------|:-------------|
-| **Mental Health** | National evidence on digital connectivity and mental health burden among Bangladeshi women |
-| **Rural-Urban Equity** | Differential associations of ICT use and ownership with depression and anxiety by residence |
-| **Spatial Epidemiology** | Divisional choropleth mapping identifying Rangpur and Rajshahi as low-access regions with distinct mental health patterns |
-| **Methodological Rigor** | DAG-informed confounder selection, STROBE-compliant reporting, survey-weighted modeling |
-| **Digital Health Policy** | Evidence base for region-specific, gender-sensitive digital mental health interventions |
-| **Public Health** | Evidence supporting SDG 3 (Good Health and Well-being) |
+This repository is permanently archived on Zenodo to guarantee long-term access and a citable, versioned snapshot of the analysis.
+
+| Resource | Link |
+|:---------|:-----|
+| Zenodo record (v1.0.0) | [10.5281/zenodo.23469923](https://zenodo.org/records/23469923) |
+| GitHub release | [v1.0.0](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women/releases/tag/v1.0.0) |
+| Repository | [muhammadsalek/digital-connectivity-mental-health-bangladesh-women](https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women) |
 
 ---
 
-## Citation
+## How to Cite
+
+**Dataset and code archive**
+
+> Miah, M. S., & Uddin, M. J. (2026). *Digital Connectivity and Mental Health Symptoms Among Women in Bangladesh: A Rural-Urban Perspective* (v1.0.0) [Data and code]. Zenodo. https://doi.org/10.5281/zenodo.23469923
+
+**BibTeX**
 
 ```bibtex
-@article{miah_uddin_digital_connectivity_mental_health_2026,
-  title   = {Digital Connectivity and Mental Health Symptoms Among Women in Bangladesh:
-             A Rural-Urban Perspective},
-  author  = {Miah, Md Salek and Uddin, Md Jamal},
-  journal = {[Journal Name]},
-  year    = {2026},
-  note    = {Q1 Journal Submission},
-  url     = {https://github.com/muhammadsalek/digital-connectivity-mental-health-bangladesh-women}
+@misc{miah_uddin_2026_digital_connectivity,
+  author    = {Miah, Md Salek and Uddin, Md Jamal},
+  title     = {Digital Connectivity and Mental Health Symptoms Among Women
+               in Bangladesh: A Rural-Urban Perspective},
+  year      = {2026},
+  version   = {v1.0.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23469923},
+  url       = {https://doi.org/10.5281/zenodo.23469923}
 }
 ```
 
@@ -417,10 +366,16 @@ To ensure long-term reproducibility and citability, this repository can be archi
 
 ## License
 
-MIT License. Copyright (c) 2026 Md Salek Miah and Md Jamal Uddin.
-Open for academic research. Citation required for publication use.
+Released under the MIT License. Copyright (c) 2026 Md Salek Miah and Md Jamal Uddin. Open for academic research; citation is required for publication use.
 
 ---
+
+## Contact
+
+For questions, collaboration, or data and code queries:
+
+- **Md Salek Miah:** [saleksta@gmail.com](mailto:saleksta@gmail.com)
+- **Md Jamal Uddin, PhD (Corresponding Author):** [jamal-sta@sust.edu](mailto:jamal-sta@sust.edu)
 
 <div align="center">
 
@@ -434,7 +389,5 @@ Department of Statistics · Shahjalal University of Science and Technology · Sy
 [![Spatial Analysis](https://img.shields.io/badge/Spatial-sf%20%2B%20ggplot2-2E8B57?style=flat-square)](https://r-spatial.github.io/sf/)
 [![STROBE](https://img.shields.io/badge/Reporting-STROBE-9333ea?style=flat-square)](https://www.strobe-statement.org)
 [![SUST](https://img.shields.io/badge/University-SUST%20Bangladesh-f59e0b?style=flat-square)](https://www.sust.edu)
-
-*Star this repo if it helped your research.*
 
 </div>
